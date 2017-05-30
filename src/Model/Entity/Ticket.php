@@ -9,15 +9,20 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $nombre
  * @property string $descripcion
- * @property int $id_categoria
- * @property int $id_tipo
+ * @property int $categoria_id
+ * @property int $tipo_id
  * @property string $contacto_adicional
- * @property \Cake\I18n\FrozenDate $fecha_abierto
+ * @property \Cake\I18n\FrozenDate $created
  * @property \Cake\I18n\FrozenDate $fecha_cerrado
  * @property int $sla
- * @property int $id_estado
- * @property int $id_solicitante
- * @property int $id_tecnico
+ * @property int $estado_id
+ * @property int $solicitante_id
+ * @property int $tecnico_id
+ *
+ * @property \App\Model\Entity\TicketCategoria $ticket_categoria
+ * @property \App\Model\Entity\TipoTicket $tipo_ticket
+ * @property \App\Model\Entity\TicketEstado $ticket_estado
+ * @property \App\Model\Entity\Usuario $usuario
  */
 class Ticket extends Entity
 {
